@@ -416,6 +416,12 @@ uint8_t testArry[64] = {
 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 
 60, 61, 62, 63 };
 
+uint8_t testArry2[64] = {
+5, 4, 3, 2, 1, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 
+20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 
+40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 
+60, 61, 62, 63 };
+
 #if defined(__CC_ARM) || defined(__GNUC__)
 int main(void)
 #else
@@ -436,9 +442,9 @@ void main(void)
         USB_DeviceTaskFn(g_UsbDeviceHidGeneric.deviceHandle);
 #endif
 		
-		HID_Send64Byte((uint8_t*)"0123generic test1");
-		delay(100000000);
 		HID_Send64Byte(testArry);
+		delay(100000000);
+		HID_Send64Byte(testArry2);
 		delay(100000000);
 		
     }
