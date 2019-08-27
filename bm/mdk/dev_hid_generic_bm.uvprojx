@@ -395,36 +395,6 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>sources</GroupName>
-          <Files>
-            <File>
-              <FileName>hid_generic.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../hid_generic.c</FilePath>
-            </File>
-            <File>
-              <FileName>hid_generic.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../hid_generic.h</FilePath>
-            </File>
-            <File>
-              <FileName>usb_device_descriptor.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../usb_device_descriptor.c</FilePath>
-            </File>
-            <File>
-              <FileName>usb_device_descriptor.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../usb_device_descriptor.h</FilePath>
-            </File>
-            <File>
-              <FileName>usb_device_config.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../usb_device_config.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
           <GroupName>board-src</GroupName>
           <Files>
             <File>
@@ -460,22 +430,62 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>usb-device-source-ehci</GroupName>
+          <GroupName>usb-user</GroupName>
           <Files>
             <File>
-              <FileName>usb_device_ehci.c</FileName>
+              <FileName>hid_generic.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../middleware/usb/device/usb_device_ehci.c</FilePath>
+              <FilePath>..\Source\USB\usb_user\hid_generic.c</FilePath>
             </File>
             <File>
-              <FileName>usb_device_ehci.h</FileName>
+              <FileName>hid_generic.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/device/usb_device_ehci.h</FilePath>
+              <FilePath>..\Source\USB\usb_user\hid_generic.h</FilePath>
             </File>
             <File>
-              <FileName>usb_ehci.h</FileName>
+              <FileName>usb_device_ch9.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source\USB\usb_user\usb_device_ch9.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_ch9.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/include/usb_ehci.h</FilePath>
+              <FilePath>..\Source\USB\usb_user\usb_device_ch9.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_class.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source\USB\usb_user\usb_device_class.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_class.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\usb_user\usb_device_class.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_config.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\usb_user\usb_device_config.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_descriptor.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source\USB\usb_user\usb_device_descriptor.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_descriptor.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\usb_user\usb_device_descriptor.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_hid.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source\USB\usb_user\usb_device_hid.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_hid.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\usb_user\usb_device_hid.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -485,37 +495,17 @@
             <File>
               <FileName>usb.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/include/usb.h</FilePath>
+              <FilePath>..\Source\USB\include\usb.h</FilePath>
             </File>
             <File>
               <FileName>usb_misc.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/include/usb_misc.h</FilePath>
+              <FilePath>..\Source\USB\include\usb_misc.h</FilePath>
             </File>
             <File>
               <FileName>usb_spec.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/include/usb_spec.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>osa</GroupName>
-          <Files>
-            <File>
-              <FileName>usb_osa.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/osa/usb_osa.h</FilePath>
-            </File>
-            <File>
-              <FileName>usb_osa_bm.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/osa/usb_osa_bm.h</FilePath>
-            </File>
-            <File>
-              <FileName>usb_osa_bm.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../../../../../../middleware/usb/osa/usb_osa_bm.c</FilePath>
+              <FilePath>..\Source\USB\include\usb_spec.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -525,12 +515,67 @@
             <File>
               <FileName>usb_phy.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../middleware/usb/phy/usb_phy.c</FilePath>
+              <FilePath>..\Source\USB\phy\usb_phy.c</FilePath>
             </File>
             <File>
               <FileName>usb_phy.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/phy/usb_phy.h</FilePath>
+              <FilePath>..\Source\USB\phy\usb_phy.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>usb-device</GroupName>
+          <Files>
+            <File>
+              <FileName>usb_device.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\device\usb_device.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_ehci.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source\USB\device\usb_device_ehci.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_ehci.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\device\usb_device_ehci.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb_ehci.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\include\usb_ehci.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_dci.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source\USB\device\usb_device_dci.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_dci.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\device\usb_device_dci.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>osa</GroupName>
+          <Files>
+            <File>
+              <FileName>usb_osa.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\osa\usb_osa.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb_osa_bm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source\USB\osa\usb_osa_bm.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_osa_bm.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\osa\usb_osa_bm.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -540,122 +585,57 @@
             <File>
               <FileName>fsl_cache.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_cache.c</FilePath>
+              <FilePath>..\Source\drivers\fsl_cache.c</FilePath>
             </File>
             <File>
               <FileName>fsl_cache.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_cache.h</FilePath>
+              <FilePath>..\Source\drivers\fsl_cache.h</FilePath>
             </File>
             <File>
               <FileName>fsl_common.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_common.h</FilePath>
+              <FilePath>..\Source\drivers\fsl_common.h</FilePath>
             </File>
             <File>
               <FileName>fsl_common.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_common.c</FilePath>
-            </File>
-            <File>
-              <FileName>fsl_clock.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_clock.h</FilePath>
+              <FilePath>..\Source\drivers\fsl_common.c</FilePath>
             </File>
             <File>
               <FileName>fsl_clock.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_clock.c</FilePath>
+              <FilePath>..\Source\drivers\fsl_clock.c</FilePath>
             </File>
             <File>
-              <FileName>fsl_lpuart.h</FileName>
+              <FileName>fsl_clock.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_lpuart.h</FilePath>
+              <FilePath>..\Source\drivers\fsl_clock.h</FilePath>
             </File>
             <File>
               <FileName>fsl_lpuart.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_lpuart.c</FilePath>
+              <FilePath>..\Source\drivers\fsl_lpuart.c</FilePath>
+            </File>
+            <File>
+              <FileName>fsl_lpuart.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\drivers\fsl_lpuart.h</FilePath>
             </File>
             <File>
               <FileName>fsl_iomuxc.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_iomuxc.h</FilePath>
-            </File>
-            <File>
-              <FileName>fsl_gpio.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_gpio.h</FilePath>
+              <FilePath>..\Source\drivers\fsl_iomuxc.h</FilePath>
             </File>
             <File>
               <FileName>fsl_gpio.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_gpio.c</FilePath>
+              <FilePath>..\Source\drivers\fsl_gpio.c</FilePath>
             </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>usb-device-include</GroupName>
-          <Files>
             <File>
-              <FileName>usb_device.h</FileName>
+              <FileName>fsl_gpio.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/device/usb_device.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>usb-device-source</GroupName>
-          <Files>
-            <File>
-              <FileName>usb_device_dci.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../../../../../../middleware/usb/device/usb_device_dci.c</FilePath>
-            </File>
-            <File>
-              <FileName>usb_device_dci.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/device/usb_device_dci.h</FilePath>
-            </File>
-            <File>
-              <FileName>usb_device_ch9.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../usb_device_ch9.c</FilePath>
-            </File>
-            <File>
-              <FileName>usb_device_ch9.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../usb_device_ch9.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>usb-device-class</GroupName>
-          <Files>
-            <File>
-              <FileName>usb_device_class.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../usb_device_class.c</FilePath>
-            </File>
-            <File>
-              <FileName>usb_device_class.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../usb_device_class.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>usb-device-class-hid</GroupName>
-          <Files>
-            <File>
-              <FileName>usb_device_hid.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../usb_device_hid.c</FilePath>
-            </File>
-            <File>
-              <FileName>usb_device_hid.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../usb_device_hid.h</FilePath>
+              <FilePath>..\Source\drivers\fsl_gpio.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -663,19 +643,19 @@
           <GroupName>startup</GroupName>
           <Files>
             <File>
+              <FileName>startup_MIMXRT1052.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>..\Source\StartUp\startup_MIMXRT1052.s</FilePath>
+            </File>
+            <File>
               <FileName>system_MIMXRT1052.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/system_MIMXRT1052.c</FilePath>
+              <FilePath>..\Source\StartUp\system_MIMXRT1052.c</FilePath>
             </File>
             <File>
               <FileName>system_MIMXRT1052.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/system_MIMXRT1052.h</FilePath>
-            </File>
-            <File>
-              <FileName>startup_MIMXRT1052.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/arm/startup_MIMXRT1052.s</FilePath>
+              <FilePath>..\Source\StartUp\system_MIMXRT1052.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -685,52 +665,52 @@
             <File>
               <FileName>fsl_io.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/io/fsl_io.c</FilePath>
+              <FilePath>..\Source\utilities\io\fsl_io.c</FilePath>
             </File>
             <File>
               <FileName>fsl_io.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/io/fsl_io.h</FilePath>
+              <FilePath>..\Source\utilities\io\fsl_io.h</FilePath>
             </File>
             <File>
               <FileName>fsl_log.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/log/fsl_log.c</FilePath>
+              <FilePath>..\Source\utilities\log\fsl_log.c</FilePath>
             </File>
             <File>
               <FileName>fsl_log.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/log/fsl_log.h</FilePath>
+              <FilePath>..\Source\utilities\log\fsl_log.h</FilePath>
             </File>
             <File>
               <FileName>fsl_str.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/str/fsl_str.c</FilePath>
+              <FilePath>..\Source\utilities\str\fsl_str.c</FilePath>
             </File>
             <File>
               <FileName>fsl_str.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/str/fsl_str.h</FilePath>
+              <FilePath>..\Source\utilities\str\fsl_str.h</FilePath>
             </File>
             <File>
               <FileName>fsl_debug_console.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/fsl_debug_console.c</FilePath>
+              <FilePath>..\Source\utilities\fsl_debug_console.c</FilePath>
             </File>
             <File>
               <FileName>fsl_debug_console.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/fsl_debug_console.h</FilePath>
+              <FilePath>..\Source\utilities\fsl_debug_console.h</FilePath>
             </File>
             <File>
               <FileName>fsl_debug_console_conf.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/fsl_debug_console_conf.h</FilePath>
+              <FilePath>..\Source\utilities\fsl_debug_console_conf.h</FilePath>
             </File>
             <File>
               <FileName>fsl_assert.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/fsl_assert.c</FilePath>
+              <FilePath>..\Source\utilities\fsl_assert.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -738,34 +718,34 @@
           <GroupName>xip</GroupName>
           <Files>
             <File>
-              <FileName>fsl_flexspi_nor_boot.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/xip/fsl_flexspi_nor_boot.h</FilePath>
-            </File>
-            <File>
               <FileName>fsl_flexspi_nor_boot.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/xip/fsl_flexspi_nor_boot.c</FilePath>
+              <FilePath>..\Source\xip\fsl_flexspi_nor_boot.c</FilePath>
+            </File>
+            <File>
+              <FileName>fsl_flexspi_nor_boot.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\xip\fsl_flexspi_nor_boot.h</FilePath>
             </File>
             <File>
               <FileName>evkbimxrt1050_flexspi_nor_config.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/xip/evkbimxrt1050_flexspi_nor_config.c</FilePath>
+              <FilePath>..\Source\xip\evkbimxrt1050_flexspi_nor_config.c</FilePath>
             </File>
             <File>
               <FileName>evkbimxrt1050_flexspi_nor_config.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/xip/evkbimxrt1050_flexspi_nor_config.h</FilePath>
+              <FilePath>..\Source\xip\evkbimxrt1050_flexspi_nor_config.h</FilePath>
             </File>
             <File>
               <FileName>evkbimxrt1050_sdram_ini_dcd.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/xip/evkbimxrt1050_sdram_ini_dcd.c</FilePath>
+              <FilePath>..\Source\xip\evkbimxrt1050_sdram_ini_dcd.c</FilePath>
             </File>
             <File>
               <FileName>evkbimxrt1050_sdram_ini_dcd.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/xip/evkbimxrt1050_sdram_ini_dcd.h</FilePath>
+              <FilePath>..\Source\xip\evkbimxrt1050_sdram_ini_dcd.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -1165,36 +1145,6 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>sources</GroupName>
-          <Files>
-            <File>
-              <FileName>hid_generic.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../hid_generic.c</FilePath>
-            </File>
-            <File>
-              <FileName>hid_generic.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../hid_generic.h</FilePath>
-            </File>
-            <File>
-              <FileName>usb_device_descriptor.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../usb_device_descriptor.c</FilePath>
-            </File>
-            <File>
-              <FileName>usb_device_descriptor.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../usb_device_descriptor.h</FilePath>
-            </File>
-            <File>
-              <FileName>usb_device_config.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../usb_device_config.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
           <GroupName>board-src</GroupName>
           <Files>
             <File>
@@ -1230,22 +1180,62 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>usb-device-source-ehci</GroupName>
+          <GroupName>usb-user</GroupName>
           <Files>
             <File>
-              <FileName>usb_device_ehci.c</FileName>
+              <FileName>hid_generic.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../middleware/usb/device/usb_device_ehci.c</FilePath>
+              <FilePath>..\Source\USB\usb_user\hid_generic.c</FilePath>
             </File>
             <File>
-              <FileName>usb_device_ehci.h</FileName>
+              <FileName>hid_generic.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/device/usb_device_ehci.h</FilePath>
+              <FilePath>..\Source\USB\usb_user\hid_generic.h</FilePath>
             </File>
             <File>
-              <FileName>usb_ehci.h</FileName>
+              <FileName>usb_device_ch9.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source\USB\usb_user\usb_device_ch9.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_ch9.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/include/usb_ehci.h</FilePath>
+              <FilePath>..\Source\USB\usb_user\usb_device_ch9.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_class.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source\USB\usb_user\usb_device_class.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_class.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\usb_user\usb_device_class.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_config.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\usb_user\usb_device_config.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_descriptor.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source\USB\usb_user\usb_device_descriptor.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_descriptor.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\usb_user\usb_device_descriptor.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_hid.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source\USB\usb_user\usb_device_hid.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_hid.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\usb_user\usb_device_hid.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -1255,37 +1245,17 @@
             <File>
               <FileName>usb.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/include/usb.h</FilePath>
+              <FilePath>..\Source\USB\include\usb.h</FilePath>
             </File>
             <File>
               <FileName>usb_misc.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/include/usb_misc.h</FilePath>
+              <FilePath>..\Source\USB\include\usb_misc.h</FilePath>
             </File>
             <File>
               <FileName>usb_spec.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/include/usb_spec.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>osa</GroupName>
-          <Files>
-            <File>
-              <FileName>usb_osa.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/osa/usb_osa.h</FilePath>
-            </File>
-            <File>
-              <FileName>usb_osa_bm.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/osa/usb_osa_bm.h</FilePath>
-            </File>
-            <File>
-              <FileName>usb_osa_bm.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../../../../../../middleware/usb/osa/usb_osa_bm.c</FilePath>
+              <FilePath>..\Source\USB\include\usb_spec.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -1295,12 +1265,67 @@
             <File>
               <FileName>usb_phy.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../middleware/usb/phy/usb_phy.c</FilePath>
+              <FilePath>..\Source\USB\phy\usb_phy.c</FilePath>
             </File>
             <File>
               <FileName>usb_phy.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/phy/usb_phy.h</FilePath>
+              <FilePath>..\Source\USB\phy\usb_phy.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>usb-device</GroupName>
+          <Files>
+            <File>
+              <FileName>usb_device.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\device\usb_device.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_ehci.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source\USB\device\usb_device_ehci.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_ehci.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\device\usb_device_ehci.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb_ehci.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\include\usb_ehci.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_dci.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source\USB\device\usb_device_dci.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_dci.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\device\usb_device_dci.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>osa</GroupName>
+          <Files>
+            <File>
+              <FileName>usb_osa.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\osa\usb_osa.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb_osa_bm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source\USB\osa\usb_osa_bm.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_osa_bm.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\osa\usb_osa_bm.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -1310,122 +1335,57 @@
             <File>
               <FileName>fsl_cache.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_cache.c</FilePath>
+              <FilePath>..\Source\drivers\fsl_cache.c</FilePath>
             </File>
             <File>
               <FileName>fsl_cache.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_cache.h</FilePath>
+              <FilePath>..\Source\drivers\fsl_cache.h</FilePath>
             </File>
             <File>
               <FileName>fsl_common.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_common.h</FilePath>
+              <FilePath>..\Source\drivers\fsl_common.h</FilePath>
             </File>
             <File>
               <FileName>fsl_common.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_common.c</FilePath>
-            </File>
-            <File>
-              <FileName>fsl_clock.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_clock.h</FilePath>
+              <FilePath>..\Source\drivers\fsl_common.c</FilePath>
             </File>
             <File>
               <FileName>fsl_clock.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_clock.c</FilePath>
+              <FilePath>..\Source\drivers\fsl_clock.c</FilePath>
             </File>
             <File>
-              <FileName>fsl_lpuart.h</FileName>
+              <FileName>fsl_clock.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_lpuart.h</FilePath>
+              <FilePath>..\Source\drivers\fsl_clock.h</FilePath>
             </File>
             <File>
               <FileName>fsl_lpuart.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_lpuart.c</FilePath>
+              <FilePath>..\Source\drivers\fsl_lpuart.c</FilePath>
+            </File>
+            <File>
+              <FileName>fsl_lpuart.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\drivers\fsl_lpuart.h</FilePath>
             </File>
             <File>
               <FileName>fsl_iomuxc.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_iomuxc.h</FilePath>
-            </File>
-            <File>
-              <FileName>fsl_gpio.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_gpio.h</FilePath>
+              <FilePath>..\Source\drivers\fsl_iomuxc.h</FilePath>
             </File>
             <File>
               <FileName>fsl_gpio.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_gpio.c</FilePath>
+              <FilePath>..\Source\drivers\fsl_gpio.c</FilePath>
             </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>usb-device-include</GroupName>
-          <Files>
             <File>
-              <FileName>usb_device.h</FileName>
+              <FileName>fsl_gpio.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/device/usb_device.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>usb-device-source</GroupName>
-          <Files>
-            <File>
-              <FileName>usb_device_dci.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../../../../../../middleware/usb/device/usb_device_dci.c</FilePath>
-            </File>
-            <File>
-              <FileName>usb_device_dci.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/device/usb_device_dci.h</FilePath>
-            </File>
-            <File>
-              <FileName>usb_device_ch9.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../usb_device_ch9.c</FilePath>
-            </File>
-            <File>
-              <FileName>usb_device_ch9.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../usb_device_ch9.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>usb-device-class</GroupName>
-          <Files>
-            <File>
-              <FileName>usb_device_class.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../usb_device_class.c</FilePath>
-            </File>
-            <File>
-              <FileName>usb_device_class.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../usb_device_class.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>usb-device-class-hid</GroupName>
-          <Files>
-            <File>
-              <FileName>usb_device_hid.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../usb_device_hid.c</FilePath>
-            </File>
-            <File>
-              <FileName>usb_device_hid.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../usb_device_hid.h</FilePath>
+              <FilePath>..\Source\drivers\fsl_gpio.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -1433,19 +1393,19 @@
           <GroupName>startup</GroupName>
           <Files>
             <File>
+              <FileName>startup_MIMXRT1052.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>..\Source\StartUp\startup_MIMXRT1052.s</FilePath>
+            </File>
+            <File>
               <FileName>system_MIMXRT1052.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/system_MIMXRT1052.c</FilePath>
+              <FilePath>..\Source\StartUp\system_MIMXRT1052.c</FilePath>
             </File>
             <File>
               <FileName>system_MIMXRT1052.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/system_MIMXRT1052.h</FilePath>
-            </File>
-            <File>
-              <FileName>startup_MIMXRT1052.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/arm/startup_MIMXRT1052.s</FilePath>
+              <FilePath>..\Source\StartUp\system_MIMXRT1052.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -1455,52 +1415,52 @@
             <File>
               <FileName>fsl_io.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/io/fsl_io.c</FilePath>
+              <FilePath>..\Source\utilities\io\fsl_io.c</FilePath>
             </File>
             <File>
               <FileName>fsl_io.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/io/fsl_io.h</FilePath>
+              <FilePath>..\Source\utilities\io\fsl_io.h</FilePath>
             </File>
             <File>
               <FileName>fsl_log.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/log/fsl_log.c</FilePath>
+              <FilePath>..\Source\utilities\log\fsl_log.c</FilePath>
             </File>
             <File>
               <FileName>fsl_log.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/log/fsl_log.h</FilePath>
+              <FilePath>..\Source\utilities\log\fsl_log.h</FilePath>
             </File>
             <File>
               <FileName>fsl_str.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/str/fsl_str.c</FilePath>
+              <FilePath>..\Source\utilities\str\fsl_str.c</FilePath>
             </File>
             <File>
               <FileName>fsl_str.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/str/fsl_str.h</FilePath>
+              <FilePath>..\Source\utilities\str\fsl_str.h</FilePath>
             </File>
             <File>
               <FileName>fsl_debug_console.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/fsl_debug_console.c</FilePath>
+              <FilePath>..\Source\utilities\fsl_debug_console.c</FilePath>
             </File>
             <File>
               <FileName>fsl_debug_console.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/fsl_debug_console.h</FilePath>
+              <FilePath>..\Source\utilities\fsl_debug_console.h</FilePath>
             </File>
             <File>
               <FileName>fsl_debug_console_conf.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/fsl_debug_console_conf.h</FilePath>
+              <FilePath>..\Source\utilities\fsl_debug_console_conf.h</FilePath>
             </File>
             <File>
               <FileName>fsl_assert.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/fsl_assert.c</FilePath>
+              <FilePath>..\Source\utilities\fsl_assert.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -1508,34 +1468,34 @@
           <GroupName>xip</GroupName>
           <Files>
             <File>
-              <FileName>fsl_flexspi_nor_boot.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/xip/fsl_flexspi_nor_boot.h</FilePath>
-            </File>
-            <File>
               <FileName>fsl_flexspi_nor_boot.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/xip/fsl_flexspi_nor_boot.c</FilePath>
+              <FilePath>..\Source\xip\fsl_flexspi_nor_boot.c</FilePath>
+            </File>
+            <File>
+              <FileName>fsl_flexspi_nor_boot.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\xip\fsl_flexspi_nor_boot.h</FilePath>
             </File>
             <File>
               <FileName>evkbimxrt1050_flexspi_nor_config.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/xip/evkbimxrt1050_flexspi_nor_config.c</FilePath>
+              <FilePath>..\Source\xip\evkbimxrt1050_flexspi_nor_config.c</FilePath>
             </File>
             <File>
               <FileName>evkbimxrt1050_flexspi_nor_config.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/xip/evkbimxrt1050_flexspi_nor_config.h</FilePath>
+              <FilePath>..\Source\xip\evkbimxrt1050_flexspi_nor_config.h</FilePath>
             </File>
             <File>
               <FileName>evkbimxrt1050_sdram_ini_dcd.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/xip/evkbimxrt1050_sdram_ini_dcd.c</FilePath>
+              <FilePath>..\Source\xip\evkbimxrt1050_sdram_ini_dcd.c</FilePath>
             </File>
             <File>
               <FileName>evkbimxrt1050_sdram_ini_dcd.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/xip/evkbimxrt1050_sdram_ini_dcd.h</FilePath>
+              <FilePath>..\Source\xip\evkbimxrt1050_sdram_ini_dcd.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -1930,36 +1890,6 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>sources</GroupName>
-          <Files>
-            <File>
-              <FileName>hid_generic.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../hid_generic.c</FilePath>
-            </File>
-            <File>
-              <FileName>hid_generic.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../hid_generic.h</FilePath>
-            </File>
-            <File>
-              <FileName>usb_device_descriptor.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../usb_device_descriptor.c</FilePath>
-            </File>
-            <File>
-              <FileName>usb_device_descriptor.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../usb_device_descriptor.h</FilePath>
-            </File>
-            <File>
-              <FileName>usb_device_config.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../usb_device_config.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
           <GroupName>board-src</GroupName>
           <Files>
             <File>
@@ -1995,22 +1925,62 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>usb-device-source-ehci</GroupName>
+          <GroupName>usb-user</GroupName>
           <Files>
             <File>
-              <FileName>usb_device_ehci.c</FileName>
+              <FileName>hid_generic.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../middleware/usb/device/usb_device_ehci.c</FilePath>
+              <FilePath>..\Source\USB\usb_user\hid_generic.c</FilePath>
             </File>
             <File>
-              <FileName>usb_device_ehci.h</FileName>
+              <FileName>hid_generic.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/device/usb_device_ehci.h</FilePath>
+              <FilePath>..\Source\USB\usb_user\hid_generic.h</FilePath>
             </File>
             <File>
-              <FileName>usb_ehci.h</FileName>
+              <FileName>usb_device_ch9.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source\USB\usb_user\usb_device_ch9.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_ch9.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/include/usb_ehci.h</FilePath>
+              <FilePath>..\Source\USB\usb_user\usb_device_ch9.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_class.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source\USB\usb_user\usb_device_class.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_class.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\usb_user\usb_device_class.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_config.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\usb_user\usb_device_config.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_descriptor.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source\USB\usb_user\usb_device_descriptor.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_descriptor.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\usb_user\usb_device_descriptor.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_hid.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source\USB\usb_user\usb_device_hid.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_hid.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\usb_user\usb_device_hid.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -2020,37 +1990,17 @@
             <File>
               <FileName>usb.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/include/usb.h</FilePath>
+              <FilePath>..\Source\USB\include\usb.h</FilePath>
             </File>
             <File>
               <FileName>usb_misc.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/include/usb_misc.h</FilePath>
+              <FilePath>..\Source\USB\include\usb_misc.h</FilePath>
             </File>
             <File>
               <FileName>usb_spec.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/include/usb_spec.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>osa</GroupName>
-          <Files>
-            <File>
-              <FileName>usb_osa.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/osa/usb_osa.h</FilePath>
-            </File>
-            <File>
-              <FileName>usb_osa_bm.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/osa/usb_osa_bm.h</FilePath>
-            </File>
-            <File>
-              <FileName>usb_osa_bm.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../../../../../../middleware/usb/osa/usb_osa_bm.c</FilePath>
+              <FilePath>..\Source\USB\include\usb_spec.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -2060,12 +2010,67 @@
             <File>
               <FileName>usb_phy.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../middleware/usb/phy/usb_phy.c</FilePath>
+              <FilePath>..\Source\USB\phy\usb_phy.c</FilePath>
             </File>
             <File>
               <FileName>usb_phy.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/phy/usb_phy.h</FilePath>
+              <FilePath>..\Source\USB\phy\usb_phy.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>usb-device</GroupName>
+          <Files>
+            <File>
+              <FileName>usb_device.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\device\usb_device.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_ehci.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source\USB\device\usb_device_ehci.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_ehci.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\device\usb_device_ehci.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb_ehci.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\include\usb_ehci.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_dci.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source\USB\device\usb_device_dci.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_dci.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\device\usb_device_dci.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>osa</GroupName>
+          <Files>
+            <File>
+              <FileName>usb_osa.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\osa\usb_osa.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb_osa_bm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source\USB\osa\usb_osa_bm.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_osa_bm.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\osa\usb_osa_bm.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -2075,122 +2080,57 @@
             <File>
               <FileName>fsl_cache.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_cache.c</FilePath>
+              <FilePath>..\Source\drivers\fsl_cache.c</FilePath>
             </File>
             <File>
               <FileName>fsl_cache.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_cache.h</FilePath>
+              <FilePath>..\Source\drivers\fsl_cache.h</FilePath>
             </File>
             <File>
               <FileName>fsl_common.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_common.h</FilePath>
+              <FilePath>..\Source\drivers\fsl_common.h</FilePath>
             </File>
             <File>
               <FileName>fsl_common.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_common.c</FilePath>
-            </File>
-            <File>
-              <FileName>fsl_clock.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_clock.h</FilePath>
+              <FilePath>..\Source\drivers\fsl_common.c</FilePath>
             </File>
             <File>
               <FileName>fsl_clock.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_clock.c</FilePath>
+              <FilePath>..\Source\drivers\fsl_clock.c</FilePath>
             </File>
             <File>
-              <FileName>fsl_lpuart.h</FileName>
+              <FileName>fsl_clock.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_lpuart.h</FilePath>
+              <FilePath>..\Source\drivers\fsl_clock.h</FilePath>
             </File>
             <File>
               <FileName>fsl_lpuart.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_lpuart.c</FilePath>
+              <FilePath>..\Source\drivers\fsl_lpuart.c</FilePath>
+            </File>
+            <File>
+              <FileName>fsl_lpuart.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\drivers\fsl_lpuart.h</FilePath>
             </File>
             <File>
               <FileName>fsl_iomuxc.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_iomuxc.h</FilePath>
-            </File>
-            <File>
-              <FileName>fsl_gpio.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_gpio.h</FilePath>
+              <FilePath>..\Source\drivers\fsl_iomuxc.h</FilePath>
             </File>
             <File>
               <FileName>fsl_gpio.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_gpio.c</FilePath>
+              <FilePath>..\Source\drivers\fsl_gpio.c</FilePath>
             </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>usb-device-include</GroupName>
-          <Files>
             <File>
-              <FileName>usb_device.h</FileName>
+              <FileName>fsl_gpio.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/device/usb_device.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>usb-device-source</GroupName>
-          <Files>
-            <File>
-              <FileName>usb_device_dci.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../../../../../../middleware/usb/device/usb_device_dci.c</FilePath>
-            </File>
-            <File>
-              <FileName>usb_device_dci.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/device/usb_device_dci.h</FilePath>
-            </File>
-            <File>
-              <FileName>usb_device_ch9.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../usb_device_ch9.c</FilePath>
-            </File>
-            <File>
-              <FileName>usb_device_ch9.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../usb_device_ch9.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>usb-device-class</GroupName>
-          <Files>
-            <File>
-              <FileName>usb_device_class.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../usb_device_class.c</FilePath>
-            </File>
-            <File>
-              <FileName>usb_device_class.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../usb_device_class.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>usb-device-class-hid</GroupName>
-          <Files>
-            <File>
-              <FileName>usb_device_hid.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../usb_device_hid.c</FilePath>
-            </File>
-            <File>
-              <FileName>usb_device_hid.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../usb_device_hid.h</FilePath>
+              <FilePath>..\Source\drivers\fsl_gpio.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -2198,19 +2138,19 @@
           <GroupName>startup</GroupName>
           <Files>
             <File>
+              <FileName>startup_MIMXRT1052.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>..\Source\StartUp\startup_MIMXRT1052.s</FilePath>
+            </File>
+            <File>
               <FileName>system_MIMXRT1052.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/system_MIMXRT1052.c</FilePath>
+              <FilePath>..\Source\StartUp\system_MIMXRT1052.c</FilePath>
             </File>
             <File>
               <FileName>system_MIMXRT1052.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/system_MIMXRT1052.h</FilePath>
-            </File>
-            <File>
-              <FileName>startup_MIMXRT1052.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/arm/startup_MIMXRT1052.s</FilePath>
+              <FilePath>..\Source\StartUp\system_MIMXRT1052.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -2220,52 +2160,52 @@
             <File>
               <FileName>fsl_io.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/io/fsl_io.c</FilePath>
+              <FilePath>..\Source\utilities\io\fsl_io.c</FilePath>
             </File>
             <File>
               <FileName>fsl_io.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/io/fsl_io.h</FilePath>
+              <FilePath>..\Source\utilities\io\fsl_io.h</FilePath>
             </File>
             <File>
               <FileName>fsl_log.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/log/fsl_log.c</FilePath>
+              <FilePath>..\Source\utilities\log\fsl_log.c</FilePath>
             </File>
             <File>
               <FileName>fsl_log.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/log/fsl_log.h</FilePath>
+              <FilePath>..\Source\utilities\log\fsl_log.h</FilePath>
             </File>
             <File>
               <FileName>fsl_str.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/str/fsl_str.c</FilePath>
+              <FilePath>..\Source\utilities\str\fsl_str.c</FilePath>
             </File>
             <File>
               <FileName>fsl_str.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/str/fsl_str.h</FilePath>
+              <FilePath>..\Source\utilities\str\fsl_str.h</FilePath>
             </File>
             <File>
               <FileName>fsl_debug_console.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/fsl_debug_console.c</FilePath>
+              <FilePath>..\Source\utilities\fsl_debug_console.c</FilePath>
             </File>
             <File>
               <FileName>fsl_debug_console.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/fsl_debug_console.h</FilePath>
+              <FilePath>..\Source\utilities\fsl_debug_console.h</FilePath>
             </File>
             <File>
               <FileName>fsl_debug_console_conf.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/fsl_debug_console_conf.h</FilePath>
+              <FilePath>..\Source\utilities\fsl_debug_console_conf.h</FilePath>
             </File>
             <File>
               <FileName>fsl_assert.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/fsl_assert.c</FilePath>
+              <FilePath>..\Source\utilities\fsl_assert.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -2273,34 +2213,34 @@
           <GroupName>xip</GroupName>
           <Files>
             <File>
-              <FileName>fsl_flexspi_nor_boot.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/xip/fsl_flexspi_nor_boot.h</FilePath>
-            </File>
-            <File>
               <FileName>fsl_flexspi_nor_boot.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/xip/fsl_flexspi_nor_boot.c</FilePath>
+              <FilePath>..\Source\xip\fsl_flexspi_nor_boot.c</FilePath>
+            </File>
+            <File>
+              <FileName>fsl_flexspi_nor_boot.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\xip\fsl_flexspi_nor_boot.h</FilePath>
             </File>
             <File>
               <FileName>evkbimxrt1050_flexspi_nor_config.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/xip/evkbimxrt1050_flexspi_nor_config.c</FilePath>
+              <FilePath>..\Source\xip\evkbimxrt1050_flexspi_nor_config.c</FilePath>
             </File>
             <File>
               <FileName>evkbimxrt1050_flexspi_nor_config.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/xip/evkbimxrt1050_flexspi_nor_config.h</FilePath>
+              <FilePath>..\Source\xip\evkbimxrt1050_flexspi_nor_config.h</FilePath>
             </File>
             <File>
               <FileName>evkbimxrt1050_sdram_ini_dcd.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/xip/evkbimxrt1050_sdram_ini_dcd.c</FilePath>
+              <FilePath>..\Source\xip\evkbimxrt1050_sdram_ini_dcd.c</FilePath>
             </File>
             <File>
               <FileName>evkbimxrt1050_sdram_ini_dcd.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/xip/evkbimxrt1050_sdram_ini_dcd.h</FilePath>
+              <FilePath>..\Source\xip\evkbimxrt1050_sdram_ini_dcd.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -2695,36 +2635,6 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>sources</GroupName>
-          <Files>
-            <File>
-              <FileName>hid_generic.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../hid_generic.c</FilePath>
-            </File>
-            <File>
-              <FileName>hid_generic.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../hid_generic.h</FilePath>
-            </File>
-            <File>
-              <FileName>usb_device_descriptor.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../usb_device_descriptor.c</FilePath>
-            </File>
-            <File>
-              <FileName>usb_device_descriptor.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../usb_device_descriptor.h</FilePath>
-            </File>
-            <File>
-              <FileName>usb_device_config.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../usb_device_config.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
           <GroupName>board-src</GroupName>
           <Files>
             <File>
@@ -2760,22 +2670,62 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>usb-device-source-ehci</GroupName>
+          <GroupName>usb-user</GroupName>
           <Files>
             <File>
-              <FileName>usb_device_ehci.c</FileName>
+              <FileName>hid_generic.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../middleware/usb/device/usb_device_ehci.c</FilePath>
+              <FilePath>..\Source\USB\usb_user\hid_generic.c</FilePath>
             </File>
             <File>
-              <FileName>usb_device_ehci.h</FileName>
+              <FileName>hid_generic.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/device/usb_device_ehci.h</FilePath>
+              <FilePath>..\Source\USB\usb_user\hid_generic.h</FilePath>
             </File>
             <File>
-              <FileName>usb_ehci.h</FileName>
+              <FileName>usb_device_ch9.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source\USB\usb_user\usb_device_ch9.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_ch9.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/include/usb_ehci.h</FilePath>
+              <FilePath>..\Source\USB\usb_user\usb_device_ch9.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_class.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source\USB\usb_user\usb_device_class.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_class.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\usb_user\usb_device_class.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_config.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\usb_user\usb_device_config.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_descriptor.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source\USB\usb_user\usb_device_descriptor.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_descriptor.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\usb_user\usb_device_descriptor.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_hid.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source\USB\usb_user\usb_device_hid.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_hid.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\usb_user\usb_device_hid.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -2785,37 +2735,17 @@
             <File>
               <FileName>usb.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/include/usb.h</FilePath>
+              <FilePath>..\Source\USB\include\usb.h</FilePath>
             </File>
             <File>
               <FileName>usb_misc.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/include/usb_misc.h</FilePath>
+              <FilePath>..\Source\USB\include\usb_misc.h</FilePath>
             </File>
             <File>
               <FileName>usb_spec.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/include/usb_spec.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>osa</GroupName>
-          <Files>
-            <File>
-              <FileName>usb_osa.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/osa/usb_osa.h</FilePath>
-            </File>
-            <File>
-              <FileName>usb_osa_bm.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/osa/usb_osa_bm.h</FilePath>
-            </File>
-            <File>
-              <FileName>usb_osa_bm.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../../../../../../middleware/usb/osa/usb_osa_bm.c</FilePath>
+              <FilePath>..\Source\USB\include\usb_spec.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -2825,12 +2755,67 @@
             <File>
               <FileName>usb_phy.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../middleware/usb/phy/usb_phy.c</FilePath>
+              <FilePath>..\Source\USB\phy\usb_phy.c</FilePath>
             </File>
             <File>
               <FileName>usb_phy.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/phy/usb_phy.h</FilePath>
+              <FilePath>..\Source\USB\phy\usb_phy.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>usb-device</GroupName>
+          <Files>
+            <File>
+              <FileName>usb_device.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\device\usb_device.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_ehci.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source\USB\device\usb_device_ehci.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_ehci.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\device\usb_device_ehci.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb_ehci.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\include\usb_ehci.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_dci.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source\USB\device\usb_device_dci.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_dci.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\device\usb_device_dci.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>osa</GroupName>
+          <Files>
+            <File>
+              <FileName>usb_osa.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\osa\usb_osa.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb_osa_bm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source\USB\osa\usb_osa_bm.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_osa_bm.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\osa\usb_osa_bm.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -2840,122 +2825,57 @@
             <File>
               <FileName>fsl_cache.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_cache.c</FilePath>
+              <FilePath>..\Source\drivers\fsl_cache.c</FilePath>
             </File>
             <File>
               <FileName>fsl_cache.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_cache.h</FilePath>
+              <FilePath>..\Source\drivers\fsl_cache.h</FilePath>
             </File>
             <File>
               <FileName>fsl_common.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_common.h</FilePath>
+              <FilePath>..\Source\drivers\fsl_common.h</FilePath>
             </File>
             <File>
               <FileName>fsl_common.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_common.c</FilePath>
-            </File>
-            <File>
-              <FileName>fsl_clock.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_clock.h</FilePath>
+              <FilePath>..\Source\drivers\fsl_common.c</FilePath>
             </File>
             <File>
               <FileName>fsl_clock.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_clock.c</FilePath>
+              <FilePath>..\Source\drivers\fsl_clock.c</FilePath>
             </File>
             <File>
-              <FileName>fsl_lpuart.h</FileName>
+              <FileName>fsl_clock.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_lpuart.h</FilePath>
+              <FilePath>..\Source\drivers\fsl_clock.h</FilePath>
             </File>
             <File>
               <FileName>fsl_lpuart.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_lpuart.c</FilePath>
+              <FilePath>..\Source\drivers\fsl_lpuart.c</FilePath>
+            </File>
+            <File>
+              <FileName>fsl_lpuart.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\drivers\fsl_lpuart.h</FilePath>
             </File>
             <File>
               <FileName>fsl_iomuxc.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_iomuxc.h</FilePath>
-            </File>
-            <File>
-              <FileName>fsl_gpio.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_gpio.h</FilePath>
+              <FilePath>..\Source\drivers\fsl_iomuxc.h</FilePath>
             </File>
             <File>
               <FileName>fsl_gpio.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_gpio.c</FilePath>
+              <FilePath>..\Source\drivers\fsl_gpio.c</FilePath>
             </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>usb-device-include</GroupName>
-          <Files>
             <File>
-              <FileName>usb_device.h</FileName>
+              <FileName>fsl_gpio.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/device/usb_device.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>usb-device-source</GroupName>
-          <Files>
-            <File>
-              <FileName>usb_device_dci.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../../../../../../middleware/usb/device/usb_device_dci.c</FilePath>
-            </File>
-            <File>
-              <FileName>usb_device_dci.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/device/usb_device_dci.h</FilePath>
-            </File>
-            <File>
-              <FileName>usb_device_ch9.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../usb_device_ch9.c</FilePath>
-            </File>
-            <File>
-              <FileName>usb_device_ch9.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../usb_device_ch9.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>usb-device-class</GroupName>
-          <Files>
-            <File>
-              <FileName>usb_device_class.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../usb_device_class.c</FilePath>
-            </File>
-            <File>
-              <FileName>usb_device_class.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../usb_device_class.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>usb-device-class-hid</GroupName>
-          <Files>
-            <File>
-              <FileName>usb_device_hid.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../usb_device_hid.c</FilePath>
-            </File>
-            <File>
-              <FileName>usb_device_hid.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../usb_device_hid.h</FilePath>
+              <FilePath>..\Source\drivers\fsl_gpio.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -2963,19 +2883,19 @@
           <GroupName>startup</GroupName>
           <Files>
             <File>
+              <FileName>startup_MIMXRT1052.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>..\Source\StartUp\startup_MIMXRT1052.s</FilePath>
+            </File>
+            <File>
               <FileName>system_MIMXRT1052.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/system_MIMXRT1052.c</FilePath>
+              <FilePath>..\Source\StartUp\system_MIMXRT1052.c</FilePath>
             </File>
             <File>
               <FileName>system_MIMXRT1052.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/system_MIMXRT1052.h</FilePath>
-            </File>
-            <File>
-              <FileName>startup_MIMXRT1052.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/arm/startup_MIMXRT1052.s</FilePath>
+              <FilePath>..\Source\StartUp\system_MIMXRT1052.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -2985,52 +2905,52 @@
             <File>
               <FileName>fsl_io.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/io/fsl_io.c</FilePath>
+              <FilePath>..\Source\utilities\io\fsl_io.c</FilePath>
             </File>
             <File>
               <FileName>fsl_io.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/io/fsl_io.h</FilePath>
+              <FilePath>..\Source\utilities\io\fsl_io.h</FilePath>
             </File>
             <File>
               <FileName>fsl_log.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/log/fsl_log.c</FilePath>
+              <FilePath>..\Source\utilities\log\fsl_log.c</FilePath>
             </File>
             <File>
               <FileName>fsl_log.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/log/fsl_log.h</FilePath>
+              <FilePath>..\Source\utilities\log\fsl_log.h</FilePath>
             </File>
             <File>
               <FileName>fsl_str.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/str/fsl_str.c</FilePath>
+              <FilePath>..\Source\utilities\str\fsl_str.c</FilePath>
             </File>
             <File>
               <FileName>fsl_str.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/str/fsl_str.h</FilePath>
+              <FilePath>..\Source\utilities\str\fsl_str.h</FilePath>
             </File>
             <File>
               <FileName>fsl_debug_console.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/fsl_debug_console.c</FilePath>
+              <FilePath>..\Source\utilities\fsl_debug_console.c</FilePath>
             </File>
             <File>
               <FileName>fsl_debug_console.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/fsl_debug_console.h</FilePath>
+              <FilePath>..\Source\utilities\fsl_debug_console.h</FilePath>
             </File>
             <File>
               <FileName>fsl_debug_console_conf.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/fsl_debug_console_conf.h</FilePath>
+              <FilePath>..\Source\utilities\fsl_debug_console_conf.h</FilePath>
             </File>
             <File>
               <FileName>fsl_assert.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/fsl_assert.c</FilePath>
+              <FilePath>..\Source\utilities\fsl_assert.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -3038,34 +2958,34 @@
           <GroupName>xip</GroupName>
           <Files>
             <File>
-              <FileName>fsl_flexspi_nor_boot.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/xip/fsl_flexspi_nor_boot.h</FilePath>
-            </File>
-            <File>
               <FileName>fsl_flexspi_nor_boot.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/xip/fsl_flexspi_nor_boot.c</FilePath>
+              <FilePath>..\Source\xip\fsl_flexspi_nor_boot.c</FilePath>
+            </File>
+            <File>
+              <FileName>fsl_flexspi_nor_boot.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\xip\fsl_flexspi_nor_boot.h</FilePath>
             </File>
             <File>
               <FileName>evkbimxrt1050_flexspi_nor_config.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/xip/evkbimxrt1050_flexspi_nor_config.c</FilePath>
+              <FilePath>..\Source\xip\evkbimxrt1050_flexspi_nor_config.c</FilePath>
             </File>
             <File>
               <FileName>evkbimxrt1050_flexspi_nor_config.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/xip/evkbimxrt1050_flexspi_nor_config.h</FilePath>
+              <FilePath>..\Source\xip\evkbimxrt1050_flexspi_nor_config.h</FilePath>
             </File>
             <File>
               <FileName>evkbimxrt1050_sdram_ini_dcd.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/xip/evkbimxrt1050_sdram_ini_dcd.c</FilePath>
+              <FilePath>..\Source\xip\evkbimxrt1050_sdram_ini_dcd.c</FilePath>
             </File>
             <File>
               <FileName>evkbimxrt1050_sdram_ini_dcd.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/xip/evkbimxrt1050_sdram_ini_dcd.h</FilePath>
+              <FilePath>..\Source\xip\evkbimxrt1050_sdram_ini_dcd.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -3407,7 +3327,7 @@
 </MiscControls>
               <Define>XIP_EXTERNAL_FLASH=1, XIP_BOOT_HEADER_ENABLE=1, XIP_BOOT_HEADER_DCD_ENABLE=1, CPU_MIMXRT1052DVL6B, USB_STACK_BM,QSPI_BOOT</Define>
               <Undefine></Undefine>
-              <IncludePath>..;../../../..;../../../../../../CMSIS/Include;../../../../../../devices;../../../../../../middleware/usb;../../../../../../middleware/usb/osa;../../../../../../middleware/usb/include;../../../../../../middleware/usb/device;../../../../../../middleware/usb/phy;../../../../../../devices/MIMXRT1052/drivers;../../../../../../devices/MIMXRT1052;../../../../../../devices/MIMXRT1052/utilities/io;../../../../../../devices/MIMXRT1052/utilities/str;../../../../../../devices/MIMXRT1052/utilities/log;../../../../../../devices/MIMXRT1052/utilities;../../../../../../devices/MIMXRT1052/xip</IncludePath>
+              <IncludePath>..;../../../..;..\Source\CMSIS\Include;..\Source\USB\usb_user;..\Source\USB\device;..\Source\USB\include;..\Source\USB\osa;..\Source\USB\phy;..\Source\drivers;..\Source\StartUp;..\Source\xip;..\Source\utilities;..\Source\utilities\io;..\Source\utilities\log;..\Source\utilities\str</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -3465,36 +3385,6 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>sources</GroupName>
-          <Files>
-            <File>
-              <FileName>hid_generic.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../hid_generic.c</FilePath>
-            </File>
-            <File>
-              <FileName>hid_generic.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../hid_generic.h</FilePath>
-            </File>
-            <File>
-              <FileName>usb_device_descriptor.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../usb_device_descriptor.c</FilePath>
-            </File>
-            <File>
-              <FileName>usb_device_descriptor.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../usb_device_descriptor.h</FilePath>
-            </File>
-            <File>
-              <FileName>usb_device_config.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../usb_device_config.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
           <GroupName>board-src</GroupName>
           <Files>
             <File>
@@ -3530,22 +3420,62 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>usb-device-source-ehci</GroupName>
+          <GroupName>usb-user</GroupName>
           <Files>
             <File>
-              <FileName>usb_device_ehci.c</FileName>
+              <FileName>hid_generic.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../middleware/usb/device/usb_device_ehci.c</FilePath>
+              <FilePath>..\Source\USB\usb_user\hid_generic.c</FilePath>
             </File>
             <File>
-              <FileName>usb_device_ehci.h</FileName>
+              <FileName>hid_generic.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/device/usb_device_ehci.h</FilePath>
+              <FilePath>..\Source\USB\usb_user\hid_generic.h</FilePath>
             </File>
             <File>
-              <FileName>usb_ehci.h</FileName>
+              <FileName>usb_device_ch9.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source\USB\usb_user\usb_device_ch9.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_ch9.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/include/usb_ehci.h</FilePath>
+              <FilePath>..\Source\USB\usb_user\usb_device_ch9.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_class.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source\USB\usb_user\usb_device_class.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_class.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\usb_user\usb_device_class.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_config.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\usb_user\usb_device_config.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_descriptor.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source\USB\usb_user\usb_device_descriptor.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_descriptor.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\usb_user\usb_device_descriptor.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_hid.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source\USB\usb_user\usb_device_hid.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_hid.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\usb_user\usb_device_hid.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -3555,37 +3485,17 @@
             <File>
               <FileName>usb.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/include/usb.h</FilePath>
+              <FilePath>..\Source\USB\include\usb.h</FilePath>
             </File>
             <File>
               <FileName>usb_misc.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/include/usb_misc.h</FilePath>
+              <FilePath>..\Source\USB\include\usb_misc.h</FilePath>
             </File>
             <File>
               <FileName>usb_spec.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/include/usb_spec.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>osa</GroupName>
-          <Files>
-            <File>
-              <FileName>usb_osa.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/osa/usb_osa.h</FilePath>
-            </File>
-            <File>
-              <FileName>usb_osa_bm.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/osa/usb_osa_bm.h</FilePath>
-            </File>
-            <File>
-              <FileName>usb_osa_bm.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../../../../../../middleware/usb/osa/usb_osa_bm.c</FilePath>
+              <FilePath>..\Source\USB\include\usb_spec.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -3595,12 +3505,67 @@
             <File>
               <FileName>usb_phy.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../middleware/usb/phy/usb_phy.c</FilePath>
+              <FilePath>..\Source\USB\phy\usb_phy.c</FilePath>
             </File>
             <File>
               <FileName>usb_phy.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/phy/usb_phy.h</FilePath>
+              <FilePath>..\Source\USB\phy\usb_phy.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>usb-device</GroupName>
+          <Files>
+            <File>
+              <FileName>usb_device.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\device\usb_device.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_ehci.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source\USB\device\usb_device_ehci.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_ehci.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\device\usb_device_ehci.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb_ehci.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\include\usb_ehci.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_dci.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source\USB\device\usb_device_dci.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_dci.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\device\usb_device_dci.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>osa</GroupName>
+          <Files>
+            <File>
+              <FileName>usb_osa.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\osa\usb_osa.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb_osa_bm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source\USB\osa\usb_osa_bm.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_osa_bm.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\osa\usb_osa_bm.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -3610,122 +3575,57 @@
             <File>
               <FileName>fsl_cache.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_cache.c</FilePath>
+              <FilePath>..\Source\drivers\fsl_cache.c</FilePath>
             </File>
             <File>
               <FileName>fsl_cache.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_cache.h</FilePath>
+              <FilePath>..\Source\drivers\fsl_cache.h</FilePath>
             </File>
             <File>
               <FileName>fsl_common.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_common.h</FilePath>
+              <FilePath>..\Source\drivers\fsl_common.h</FilePath>
             </File>
             <File>
               <FileName>fsl_common.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_common.c</FilePath>
-            </File>
-            <File>
-              <FileName>fsl_clock.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_clock.h</FilePath>
+              <FilePath>..\Source\drivers\fsl_common.c</FilePath>
             </File>
             <File>
               <FileName>fsl_clock.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_clock.c</FilePath>
+              <FilePath>..\Source\drivers\fsl_clock.c</FilePath>
             </File>
             <File>
-              <FileName>fsl_lpuart.h</FileName>
+              <FileName>fsl_clock.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_lpuart.h</FilePath>
+              <FilePath>..\Source\drivers\fsl_clock.h</FilePath>
             </File>
             <File>
               <FileName>fsl_lpuart.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_lpuart.c</FilePath>
+              <FilePath>..\Source\drivers\fsl_lpuart.c</FilePath>
+            </File>
+            <File>
+              <FileName>fsl_lpuart.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\drivers\fsl_lpuart.h</FilePath>
             </File>
             <File>
               <FileName>fsl_iomuxc.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_iomuxc.h</FilePath>
-            </File>
-            <File>
-              <FileName>fsl_gpio.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_gpio.h</FilePath>
+              <FilePath>..\Source\drivers\fsl_iomuxc.h</FilePath>
             </File>
             <File>
               <FileName>fsl_gpio.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_gpio.c</FilePath>
+              <FilePath>..\Source\drivers\fsl_gpio.c</FilePath>
             </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>usb-device-include</GroupName>
-          <Files>
             <File>
-              <FileName>usb_device.h</FileName>
+              <FileName>fsl_gpio.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/device/usb_device.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>usb-device-source</GroupName>
-          <Files>
-            <File>
-              <FileName>usb_device_dci.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../../../../../../middleware/usb/device/usb_device_dci.c</FilePath>
-            </File>
-            <File>
-              <FileName>usb_device_dci.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/device/usb_device_dci.h</FilePath>
-            </File>
-            <File>
-              <FileName>usb_device_ch9.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../usb_device_ch9.c</FilePath>
-            </File>
-            <File>
-              <FileName>usb_device_ch9.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../usb_device_ch9.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>usb-device-class</GroupName>
-          <Files>
-            <File>
-              <FileName>usb_device_class.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../usb_device_class.c</FilePath>
-            </File>
-            <File>
-              <FileName>usb_device_class.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../usb_device_class.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>usb-device-class-hid</GroupName>
-          <Files>
-            <File>
-              <FileName>usb_device_hid.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../usb_device_hid.c</FilePath>
-            </File>
-            <File>
-              <FileName>usb_device_hid.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../usb_device_hid.h</FilePath>
+              <FilePath>..\Source\drivers\fsl_gpio.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -3733,19 +3633,19 @@
           <GroupName>startup</GroupName>
           <Files>
             <File>
+              <FileName>startup_MIMXRT1052.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>..\Source\StartUp\startup_MIMXRT1052.s</FilePath>
+            </File>
+            <File>
               <FileName>system_MIMXRT1052.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/system_MIMXRT1052.c</FilePath>
+              <FilePath>..\Source\StartUp\system_MIMXRT1052.c</FilePath>
             </File>
             <File>
               <FileName>system_MIMXRT1052.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/system_MIMXRT1052.h</FilePath>
-            </File>
-            <File>
-              <FileName>startup_MIMXRT1052.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/arm/startup_MIMXRT1052.s</FilePath>
+              <FilePath>..\Source\StartUp\system_MIMXRT1052.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -3755,52 +3655,52 @@
             <File>
               <FileName>fsl_io.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/io/fsl_io.c</FilePath>
+              <FilePath>..\Source\utilities\io\fsl_io.c</FilePath>
             </File>
             <File>
               <FileName>fsl_io.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/io/fsl_io.h</FilePath>
+              <FilePath>..\Source\utilities\io\fsl_io.h</FilePath>
             </File>
             <File>
               <FileName>fsl_log.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/log/fsl_log.c</FilePath>
+              <FilePath>..\Source\utilities\log\fsl_log.c</FilePath>
             </File>
             <File>
               <FileName>fsl_log.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/log/fsl_log.h</FilePath>
+              <FilePath>..\Source\utilities\log\fsl_log.h</FilePath>
             </File>
             <File>
               <FileName>fsl_str.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/str/fsl_str.c</FilePath>
+              <FilePath>..\Source\utilities\str\fsl_str.c</FilePath>
             </File>
             <File>
               <FileName>fsl_str.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/str/fsl_str.h</FilePath>
+              <FilePath>..\Source\utilities\str\fsl_str.h</FilePath>
             </File>
             <File>
               <FileName>fsl_debug_console.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/fsl_debug_console.c</FilePath>
+              <FilePath>..\Source\utilities\fsl_debug_console.c</FilePath>
             </File>
             <File>
               <FileName>fsl_debug_console.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/fsl_debug_console.h</FilePath>
+              <FilePath>..\Source\utilities\fsl_debug_console.h</FilePath>
             </File>
             <File>
               <FileName>fsl_debug_console_conf.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/fsl_debug_console_conf.h</FilePath>
+              <FilePath>..\Source\utilities\fsl_debug_console_conf.h</FilePath>
             </File>
             <File>
               <FileName>fsl_assert.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/fsl_assert.c</FilePath>
+              <FilePath>..\Source\utilities\fsl_assert.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -3808,34 +3708,34 @@
           <GroupName>xip</GroupName>
           <Files>
             <File>
-              <FileName>fsl_flexspi_nor_boot.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/xip/fsl_flexspi_nor_boot.h</FilePath>
-            </File>
-            <File>
               <FileName>fsl_flexspi_nor_boot.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/xip/fsl_flexspi_nor_boot.c</FilePath>
+              <FilePath>..\Source\xip\fsl_flexspi_nor_boot.c</FilePath>
+            </File>
+            <File>
+              <FileName>fsl_flexspi_nor_boot.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\xip\fsl_flexspi_nor_boot.h</FilePath>
             </File>
             <File>
               <FileName>evkbimxrt1050_flexspi_nor_config.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/xip/evkbimxrt1050_flexspi_nor_config.c</FilePath>
+              <FilePath>..\Source\xip\evkbimxrt1050_flexspi_nor_config.c</FilePath>
             </File>
             <File>
               <FileName>evkbimxrt1050_flexspi_nor_config.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/xip/evkbimxrt1050_flexspi_nor_config.h</FilePath>
+              <FilePath>..\Source\xip\evkbimxrt1050_flexspi_nor_config.h</FilePath>
             </File>
             <File>
               <FileName>evkbimxrt1050_sdram_ini_dcd.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/xip/evkbimxrt1050_sdram_ini_dcd.c</FilePath>
+              <FilePath>..\Source\xip\evkbimxrt1050_sdram_ini_dcd.c</FilePath>
             </File>
             <File>
               <FileName>evkbimxrt1050_sdram_ini_dcd.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/xip/evkbimxrt1050_sdram_ini_dcd.h</FilePath>
+              <FilePath>..\Source\xip\evkbimxrt1050_sdram_ini_dcd.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -4229,36 +4129,6 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>sources</GroupName>
-          <Files>
-            <File>
-              <FileName>hid_generic.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../hid_generic.c</FilePath>
-            </File>
-            <File>
-              <FileName>hid_generic.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../hid_generic.h</FilePath>
-            </File>
-            <File>
-              <FileName>usb_device_descriptor.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../usb_device_descriptor.c</FilePath>
-            </File>
-            <File>
-              <FileName>usb_device_descriptor.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../usb_device_descriptor.h</FilePath>
-            </File>
-            <File>
-              <FileName>usb_device_config.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../usb_device_config.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
           <GroupName>board-src</GroupName>
           <Files>
             <File>
@@ -4294,22 +4164,62 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>usb-device-source-ehci</GroupName>
+          <GroupName>usb-user</GroupName>
           <Files>
             <File>
-              <FileName>usb_device_ehci.c</FileName>
+              <FileName>hid_generic.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../middleware/usb/device/usb_device_ehci.c</FilePath>
+              <FilePath>..\Source\USB\usb_user\hid_generic.c</FilePath>
             </File>
             <File>
-              <FileName>usb_device_ehci.h</FileName>
+              <FileName>hid_generic.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/device/usb_device_ehci.h</FilePath>
+              <FilePath>..\Source\USB\usb_user\hid_generic.h</FilePath>
             </File>
             <File>
-              <FileName>usb_ehci.h</FileName>
+              <FileName>usb_device_ch9.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source\USB\usb_user\usb_device_ch9.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_ch9.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/include/usb_ehci.h</FilePath>
+              <FilePath>..\Source\USB\usb_user\usb_device_ch9.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_class.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source\USB\usb_user\usb_device_class.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_class.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\usb_user\usb_device_class.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_config.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\usb_user\usb_device_config.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_descriptor.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source\USB\usb_user\usb_device_descriptor.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_descriptor.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\usb_user\usb_device_descriptor.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_hid.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source\USB\usb_user\usb_device_hid.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_hid.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\usb_user\usb_device_hid.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -4319,37 +4229,17 @@
             <File>
               <FileName>usb.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/include/usb.h</FilePath>
+              <FilePath>..\Source\USB\include\usb.h</FilePath>
             </File>
             <File>
               <FileName>usb_misc.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/include/usb_misc.h</FilePath>
+              <FilePath>..\Source\USB\include\usb_misc.h</FilePath>
             </File>
             <File>
               <FileName>usb_spec.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/include/usb_spec.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>osa</GroupName>
-          <Files>
-            <File>
-              <FileName>usb_osa.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/osa/usb_osa.h</FilePath>
-            </File>
-            <File>
-              <FileName>usb_osa_bm.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/osa/usb_osa_bm.h</FilePath>
-            </File>
-            <File>
-              <FileName>usb_osa_bm.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../../../../../../middleware/usb/osa/usb_osa_bm.c</FilePath>
+              <FilePath>..\Source\USB\include\usb_spec.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -4359,12 +4249,67 @@
             <File>
               <FileName>usb_phy.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../middleware/usb/phy/usb_phy.c</FilePath>
+              <FilePath>..\Source\USB\phy\usb_phy.c</FilePath>
             </File>
             <File>
               <FileName>usb_phy.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/phy/usb_phy.h</FilePath>
+              <FilePath>..\Source\USB\phy\usb_phy.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>usb-device</GroupName>
+          <Files>
+            <File>
+              <FileName>usb_device.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\device\usb_device.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_ehci.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source\USB\device\usb_device_ehci.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_ehci.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\device\usb_device_ehci.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb_ehci.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\include\usb_ehci.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_dci.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source\USB\device\usb_device_dci.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_device_dci.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\device\usb_device_dci.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>osa</GroupName>
+          <Files>
+            <File>
+              <FileName>usb_osa.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\osa\usb_osa.h</FilePath>
+            </File>
+            <File>
+              <FileName>usb_osa_bm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source\USB\osa\usb_osa_bm.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_osa_bm.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\USB\osa\usb_osa_bm.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -4374,122 +4319,57 @@
             <File>
               <FileName>fsl_cache.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_cache.c</FilePath>
+              <FilePath>..\Source\drivers\fsl_cache.c</FilePath>
             </File>
             <File>
               <FileName>fsl_cache.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_cache.h</FilePath>
+              <FilePath>..\Source\drivers\fsl_cache.h</FilePath>
             </File>
             <File>
               <FileName>fsl_common.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_common.h</FilePath>
+              <FilePath>..\Source\drivers\fsl_common.h</FilePath>
             </File>
             <File>
               <FileName>fsl_common.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_common.c</FilePath>
-            </File>
-            <File>
-              <FileName>fsl_clock.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_clock.h</FilePath>
+              <FilePath>..\Source\drivers\fsl_common.c</FilePath>
             </File>
             <File>
               <FileName>fsl_clock.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_clock.c</FilePath>
+              <FilePath>..\Source\drivers\fsl_clock.c</FilePath>
             </File>
             <File>
-              <FileName>fsl_lpuart.h</FileName>
+              <FileName>fsl_clock.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_lpuart.h</FilePath>
+              <FilePath>..\Source\drivers\fsl_clock.h</FilePath>
             </File>
             <File>
               <FileName>fsl_lpuart.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_lpuart.c</FilePath>
+              <FilePath>..\Source\drivers\fsl_lpuart.c</FilePath>
+            </File>
+            <File>
+              <FileName>fsl_lpuart.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\drivers\fsl_lpuart.h</FilePath>
             </File>
             <File>
               <FileName>fsl_iomuxc.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_iomuxc.h</FilePath>
-            </File>
-            <File>
-              <FileName>fsl_gpio.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_gpio.h</FilePath>
+              <FilePath>..\Source\drivers\fsl_iomuxc.h</FilePath>
             </File>
             <File>
               <FileName>fsl_gpio.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/drivers/fsl_gpio.c</FilePath>
+              <FilePath>..\Source\drivers\fsl_gpio.c</FilePath>
             </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>usb-device-include</GroupName>
-          <Files>
             <File>
-              <FileName>usb_device.h</FileName>
+              <FileName>fsl_gpio.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/device/usb_device.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>usb-device-source</GroupName>
-          <Files>
-            <File>
-              <FileName>usb_device_dci.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../../../../../../middleware/usb/device/usb_device_dci.c</FilePath>
-            </File>
-            <File>
-              <FileName>usb_device_dci.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../../../../../../middleware/usb/device/usb_device_dci.h</FilePath>
-            </File>
-            <File>
-              <FileName>usb_device_ch9.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../usb_device_ch9.c</FilePath>
-            </File>
-            <File>
-              <FileName>usb_device_ch9.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../usb_device_ch9.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>usb-device-class</GroupName>
-          <Files>
-            <File>
-              <FileName>usb_device_class.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../usb_device_class.c</FilePath>
-            </File>
-            <File>
-              <FileName>usb_device_class.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../usb_device_class.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>usb-device-class-hid</GroupName>
-          <Files>
-            <File>
-              <FileName>usb_device_hid.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../usb_device_hid.c</FilePath>
-            </File>
-            <File>
-              <FileName>usb_device_hid.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../usb_device_hid.h</FilePath>
+              <FilePath>..\Source\drivers\fsl_gpio.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -4497,19 +4377,19 @@
           <GroupName>startup</GroupName>
           <Files>
             <File>
+              <FileName>startup_MIMXRT1052.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>..\Source\StartUp\startup_MIMXRT1052.s</FilePath>
+            </File>
+            <File>
               <FileName>system_MIMXRT1052.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/system_MIMXRT1052.c</FilePath>
+              <FilePath>..\Source\StartUp\system_MIMXRT1052.c</FilePath>
             </File>
             <File>
               <FileName>system_MIMXRT1052.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/system_MIMXRT1052.h</FilePath>
-            </File>
-            <File>
-              <FileName>startup_MIMXRT1052.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/arm/startup_MIMXRT1052.s</FilePath>
+              <FilePath>..\Source\StartUp\system_MIMXRT1052.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -4519,52 +4399,52 @@
             <File>
               <FileName>fsl_io.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/io/fsl_io.c</FilePath>
+              <FilePath>..\Source\utilities\io\fsl_io.c</FilePath>
             </File>
             <File>
               <FileName>fsl_io.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/io/fsl_io.h</FilePath>
+              <FilePath>..\Source\utilities\io\fsl_io.h</FilePath>
             </File>
             <File>
               <FileName>fsl_log.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/log/fsl_log.c</FilePath>
+              <FilePath>..\Source\utilities\log\fsl_log.c</FilePath>
             </File>
             <File>
               <FileName>fsl_log.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/log/fsl_log.h</FilePath>
+              <FilePath>..\Source\utilities\log\fsl_log.h</FilePath>
             </File>
             <File>
               <FileName>fsl_str.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/str/fsl_str.c</FilePath>
+              <FilePath>..\Source\utilities\str\fsl_str.c</FilePath>
             </File>
             <File>
               <FileName>fsl_str.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/str/fsl_str.h</FilePath>
+              <FilePath>..\Source\utilities\str\fsl_str.h</FilePath>
             </File>
             <File>
               <FileName>fsl_debug_console.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/fsl_debug_console.c</FilePath>
+              <FilePath>..\Source\utilities\fsl_debug_console.c</FilePath>
             </File>
             <File>
               <FileName>fsl_debug_console.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/fsl_debug_console.h</FilePath>
+              <FilePath>..\Source\utilities\fsl_debug_console.h</FilePath>
             </File>
             <File>
               <FileName>fsl_debug_console_conf.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/fsl_debug_console_conf.h</FilePath>
+              <FilePath>..\Source\utilities\fsl_debug_console_conf.h</FilePath>
             </File>
             <File>
               <FileName>fsl_assert.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/utilities/fsl_assert.c</FilePath>
+              <FilePath>..\Source\utilities\fsl_assert.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -4572,34 +4452,34 @@
           <GroupName>xip</GroupName>
           <Files>
             <File>
-              <FileName>fsl_flexspi_nor_boot.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/xip/fsl_flexspi_nor_boot.h</FilePath>
-            </File>
-            <File>
               <FileName>fsl_flexspi_nor_boot.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/xip/fsl_flexspi_nor_boot.c</FilePath>
+              <FilePath>..\Source\xip\fsl_flexspi_nor_boot.c</FilePath>
+            </File>
+            <File>
+              <FileName>fsl_flexspi_nor_boot.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source\xip\fsl_flexspi_nor_boot.h</FilePath>
             </File>
             <File>
               <FileName>evkbimxrt1050_flexspi_nor_config.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/xip/evkbimxrt1050_flexspi_nor_config.c</FilePath>
+              <FilePath>..\Source\xip\evkbimxrt1050_flexspi_nor_config.c</FilePath>
             </File>
             <File>
               <FileName>evkbimxrt1050_flexspi_nor_config.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/xip/evkbimxrt1050_flexspi_nor_config.h</FilePath>
+              <FilePath>..\Source\xip\evkbimxrt1050_flexspi_nor_config.h</FilePath>
             </File>
             <File>
               <FileName>evkbimxrt1050_sdram_ini_dcd.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/xip/evkbimxrt1050_sdram_ini_dcd.c</FilePath>
+              <FilePath>..\Source\xip\evkbimxrt1050_sdram_ini_dcd.c</FilePath>
             </File>
             <File>
               <FileName>evkbimxrt1050_sdram_ini_dcd.h</FileName>
               <FileType>5</FileType>
-              <FilePath>../../../../../../devices/MIMXRT1052/xip/evkbimxrt1050_sdram_ini_dcd.h</FilePath>
+              <FilePath>..\Source\xip\evkbimxrt1050_sdram_ini_dcd.h</FilePath>
             </File>
           </Files>
         </Group>
