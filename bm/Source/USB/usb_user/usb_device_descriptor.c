@@ -45,6 +45,8 @@
 /*******************************************************************************
  * Definitions
  ******************************************************************************/
+#define USBD_VID     	0x0483
+#define USBD_PID    	0x5703
 
 /*******************************************************************************
  * Prototypes
@@ -113,14 +115,16 @@ uint8_t g_UsbDeviceHidGenericReportDescriptor[] = {
     0x15U, 0x80U, /* Logical Minimum (-128) */
     0x25U, 0x7FU, /* Logical Maximum (127) */
     0x75U, 0x08U, /* Report Size (8U) */
-    0x95U, 0x08U, /* Report Count (8U) */
+//    0x95U, 0x08U, /* Report Count (8U) */
+    0x95U, 0x40U, /* Report Count (8U) */
     0x81U, 0x02U, /* Input(Data, Variable, Absolute) */
 
     0x09U, 0x84U, /* Usage (Vendor defined) */
     0x15U, 0x80U, /* Logical Minimum (-128) */
     0x25U, 0x7FU, /* Logical Maximum (127) */
     0x75U, 0x08U, /* Report Size (8U) */
-    0x95U, 0x08U, /* Report Count (8U) */
+//    0x95U, 0x08U, /* Report Count (8U) */
+    0x95U, 0x40U, /* Report Count (8U) */
     0x91U, 0x02U, /* Input(Data, Variable, Absolute) */
     0xC0U,        /* End collection */
 };
@@ -138,8 +142,12 @@ uint8_t g_UsbDeviceDescriptor[] = {
     USB_DEVICE_PROTOCOL,                                 /* Protocol code (assigned by the USB-IF). */
     USB_CONTROL_MAX_PACKET_SIZE,                         /* Maximum packet size for endpoint zero
                                                             (only 8, 16, 32, or 64 are valid) */
-    0xC9U, 0x1FU,                                        /* Vendor ID (assigned by the USB-IF) */
-    0xA2U, 0x00U,                                        /* Product ID (assigned by the manufacturer) */
+//    0xC9U, 0x1FU,                                        /* Vendor ID (assigned by the USB-IF) */
+//    0xA2U, 0x00U,                                        /* Product ID (assigned by the manufacturer) */
+    USB_SHORT_GET_LOW(USBD_VID),
+    USB_SHORT_GET_HIGH(USBD_VID),
+    USB_SHORT_GET_LOW(USBD_PID),
+    USB_SHORT_GET_HIGH(USBD_PID),
     USB_SHORT_GET_LOW(USB_DEVICE_DEMO_BCD_VERSION),
     USB_SHORT_GET_HIGH(USB_DEVICE_DEMO_BCD_VERSION), /* Device release number in binary-coded decimal */
     0x01U,                                           /* Index of string descriptor describing manufacturer */

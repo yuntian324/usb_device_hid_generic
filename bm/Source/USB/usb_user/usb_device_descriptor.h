@@ -40,7 +40,7 @@
  ******************************************************************************/
 
 #define USB_DEVICE_SPECIFIC_BCD_VERSION             (0x0200U)
-#define USB_DEVICE_DEMO_BCD_VERSION                 (0x0101U)
+#define USB_DEVICE_DEMO_BCD_VERSION                 (200)  //0x0101  0x00C8U
 
 #define USB_DEVICE_CLASS                            (0x00U)
 #define USB_DEVICE_SUBCLASS                         (0x00U)
@@ -73,12 +73,12 @@
 #define USB_HID_GENERIC_SUBCLASS                    (0x00U)
 #define USB_HID_GENERIC_PROTOCOL                    (0x00U)
 
-#define HS_HID_GENERIC_INTERRUPT_OUT_PACKET_SIZE    (8U)//(8U)
+#define HS_HID_GENERIC_INTERRUPT_OUT_PACKET_SIZE    (64U)//(8U)
 #define FS_HID_GENERIC_INTERRUPT_OUT_PACKET_SIZE    (64U)//(8U)
 #define HS_HID_GENERIC_INTERRUPT_OUT_INTERVAL       (0x04U) /* 2^(4-1) = 1ms */
 #define FS_HID_GENERIC_INTERRUPT_OUT_INTERVAL       (0x01U)
 
-#define HS_HID_GENERIC_INTERRUPT_IN_PACKET_SIZE     (8U)//(8U)
+#define HS_HID_GENERIC_INTERRUPT_IN_PACKET_SIZE     (64U)//(8U)
 #define FS_HID_GENERIC_INTERRUPT_IN_PACKET_SIZE     (64U)//(8U)
 #define HS_HID_GENERIC_INTERRUPT_IN_INTERVAL        (0x04U) /* 2^(4-1) = 1ms */
 #define FS_HID_GENERIC_INTERRUPT_IN_INTERVAL        (0x01U)
