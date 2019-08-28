@@ -40,6 +40,7 @@
 
 #if ((defined(USB_DEVICE_CONFIG_HID)) && (USB_DEVICE_CONFIG_HID > 0U))
 #include "usb_device_hid.h"
+#include "xBSP_USB.h"
 
 /*******************************************************************************
  * Definitions
@@ -762,6 +763,9 @@ usb_status_t USB_DeviceHidRecv(class_handle_t handle, uint8_t ep, uint8_t *buffe
     {
         hidHandle->interruptOutPipeBusy = 1U;
     }
+	
+	xBSP_USB_ReceiveDataCallBack(buffer, length);
+	
     return error;
 }
 

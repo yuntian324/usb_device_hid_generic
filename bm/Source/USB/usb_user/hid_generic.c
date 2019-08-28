@@ -73,7 +73,6 @@ void USB_DeviceTaskFn(void *deviceHandle);
 
 static usb_status_t USB_DeviceHidGenericCallback(class_handle_t handle, uint32_t event, void *param);
 static usb_status_t USB_DeviceCallback(usb_device_handle handle, uint32_t event, void *param);
-static void USB_DeviceApplicationInit(void);
 
 /*******************************************************************************
  * Variables
@@ -339,7 +338,7 @@ static usb_status_t USB_DeviceCallback(usb_device_handle handle, uint32_t event,
     return error;
 }
 
-static void USB_DeviceApplicationInit(void)
+void USB_DeviceApplicationInit(void)
 {
     USB_DeviceClockInit();
 #if (defined(FSL_FEATURE_SOC_SYSMPU_COUNT) && (FSL_FEATURE_SOC_SYSMPU_COUNT > 0U))
@@ -399,53 +398,4 @@ usb_status_t HID_Send64Byte(unsigned char* buff)
 										USB_HID_GENERIC_OUT_BUFFER_LENGTH);
 	
   return error;  //kStatus_USB_Success = 0
-}
-
-void delay(uint32_t count)
-{
-	volatile uint32_t i = 0;
-	for (i = 0; i < count; ++i)
-	{
-		__asm("NOP"); /* delay */
-	}
-}
-
-uint8_t testArry[64] = {
-0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 
-20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 
-40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 
-60, 61, 62, 63 };
-
-uint8_t testArry2[64] = {
-5, 4, 3, 2, 1, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 
-20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 
-40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 
-60, 61, 62, 63 };
-
-#if defined(__CC_ARM) || defined(__GNUC__)
-int main(void)
-#else
-void main(void)
-#endif
-{
-    BOARD_ConfigMPU();
-
-    BOARD_InitPins();
-    BOARD_BootClockRUN();
-    BOARD_InitDebugConsole();
-
-    USB_DeviceApplicationInit();
-
-    while (1U)
-    {
-#if USB_DEVICE_CONFIG_USE_TASK
-        USB_DeviceTaskFn(g_UsbDeviceHidGeneric.deviceHandle);
-#endif
-		
-		HID_Send64Byte(testArry);
-		delay(100000000);
-		HID_Send64Byte(testArry2);
-		delay(100000000);
-		
-    }
 }

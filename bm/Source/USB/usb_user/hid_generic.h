@@ -70,5 +70,6 @@ typedef struct _usb_hid_generic_struct
 /*******************************************************************************
  * API
  ******************************************************************************/
+unsigned char USB2PC(uint8_t *str,uint16_t date_leng);
 
 #endif /* __USB_DEVICE_HID_GENERIC_H__ */
